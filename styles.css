@@ -25,3 +25,45 @@ body {
     width: 60vw;
     padding-bottom: 2em;
   }
+
+  
+  input,textarea, select {
+    width: 100%;
+    margin: 10px 0 0 0;
+    min-height: 2em;
+  }
+
+  input,textarea {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+    
+  }
+
+  button {
+    display: block;
+    width: 60%;
+    margin: 1rem auto 1rem auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: #ffffff;
+    min-width: 300px;
+   color: #ffffff;
+  }
+
+  .inline {
+    width: unset;
+    margin-right: 0.5em;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: 0;
+    vertical-align: middle;
+  }
+
+  hr {
+    background-color: #0a0a23;
+   border:  #0a0a23;
+    height: 2px;
+    margin: 20px 0 20px 0;
+  }

@@ -11,28 +11,36 @@
 
 <body>
     <h1 id="title">SURVEY FORM</h1>
-    <p>Cancellation Survey</p>
-    <form id="survey-form">
+    <h3>Cancellation Survey</h3>
 
+    <form id="survey-form">
+        <hr>
         <label id="name-label" for="name">Name: <input id="name" type="text" required
                 placeholder="Enter Your Name" /></label><br>
         <label id="email-label" for="email">Email: <input id="email" type="email" required
-                placeholder="Enter Your Email" /></label>,<br>
+                placeholder="Enter Your Email" /></label><br>
         <label for="number" id="number">Age: <input type="number" min="13" max="120" id="age" name="number"
                 placeholder="Age" /></label><br>
+        <hr>
+
         <h4>How long have you been using the service?</h4>
-        <p><input type="checkbox" value="month" />
+        <p><input type="checkbox" value="month" class="inline" />
             Less than a month</p>
-        <p><input type="checkbox" value="months" />
+        <p><input type="checkbox" value="months" class="inline" />
             1-12 months</p>
-        <p><input type="checkbox" value="year" />
+        <p><input type="checkbox" value="year" class="inline" />
             1-3 years</p>
-        <p><input type="checkbox" value="years" />
+        <p><input type="checkbox" value="years" class="inline" />
             Over 3 years</p>
+        <hr>
+
         <h4>How often did you use the service?</h4>
-        <p><input type="checkbox" value="once-week" /> Once a week</p>
-        <p><input type="checkbox" value="once-month" /> Once a month</p>
-        <p><input type="checkbox" value="less" />Less than once a month</p>
+        <p><input type="checkbox" value="once-week" class="inline" /> Once a week</p>
+        <p><input type="checkbox" value="once-month" class="inline" /> Once a month</p>
+
+        <p><input type="checkbox" value="less" class="inline" />Less than once a month</p>
+
+        <hr>
         <label for="dropdown">What was the main reason for cancelling the service?
             <select id="dropdown">
                 <option value="">No longer need it</option>
@@ -42,29 +50,35 @@
                 <option value="4">Other</option>
             </select>
         </label>
+
+        <hr>
         <h4>Will you use our service in the future?</h4>
-        <label for="defnitely"><input type="radio" value="defnitely" name="use" />
+        <label for="defnitely"><input type="radio" value="defnitely" name="use" class="inline" />
             Definitely
         </label>
-        <label for="probably"><input type="radio" value="probably" name="use" />
+        <label for="probably"><input type="radio" value="probably" name="use" class="inline" />
             Probably
         </label>
-        <label for="sure"><input type="radio" value="sure" name="use" />
+        <label for="sure"><input type="radio" value="sure" name="use" class="inline" />
             Not Sure
         </label>
+
+        <hr>
         <h4>How satisfied were you with the service?</h4>
-        <label for="unsatisfied"><input type="radio" value="unsatisfied" name="service" />
+        <label for="unsatisfied"><input type="radio" value="unsatisfied" name="service" class="inline" />
             Very Unsatisfied
         </label>
-        <label for="satisfied"><input type="radio" value="satisfied" name="service" />
+        <label for="satisfied"><input type="radio" value="satisfied" name="service" class="inline" />
             Very Satisfied
         </label>
         <hr>
         <label for="improve">How can we improve our services? <br>
             <textarea rows="6" cols="40" placeholder="Type here" id="improve"></textarea>
         </label>
-        <p><input type="submit" value="Submit" /></p>
 
+        <hr>
+        <p><button type="submit" value="Submit">Submit</button></p>
+        <hr>
     </form>
 </body>
 
